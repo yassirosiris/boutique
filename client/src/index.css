@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 344 88% 51%;
+  --color-accent: 216 92% 60%;
+  --color-bg: 220 20% 98%;
+  --color-card: 0 0% 100%;
+  --color-muted: 220 15% 92%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: hsl(var(--color-bg));
+  color: #111827;
+}
+
+#root {
+  min-height: 100vh;
+}

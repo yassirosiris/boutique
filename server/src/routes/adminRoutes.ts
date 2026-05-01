@@ -1,0 +1,27 @@
+import { Router } from "express";
+import multer from "multer";
+import {
+  adminCreateProduct,
+  adminDashboard,
+  adminDeleteProduct,
+  adminGetOrders,
+  adminGetProducts,
+  adminUpdateOrderStatus,
+  adminUpdateProduct
+} from "../controllers/adminController.js";
+import { requireAdmin, requireAuth } from "../middlewares/auth.js";
+
+const upload = multer({ dest: "uploads/" });
+const router = Router();
+
+router.use(requireAuth, requireAdmin);
+router.get("/products", adminGetProducts);
+router.post("/products", upload.single("image"), adminCreateProduct);
+router.put("/products/:id", adminUpdateProduct);
+router.delete("/products/:id", adminDeleteProduct);
+
+router.get("/orders", adminGetOrders);
+router.put("/orders/:id", adminUpdateOrderStatus);
+router.get("/dashboard", adminDashboard);
+
+export default router;
