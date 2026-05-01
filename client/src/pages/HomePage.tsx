@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
+import { Helmet } from "react-helmet-async";
+
 export const HomePage = () => (
+  <>
   <div className="space-y-10">
     <section className="rounded-2xl bg-gradient-to-r from-primary to-accent p-8 text-white">
       <h1 className="text-3xl font-bold">Nouvelle collection</h1>
