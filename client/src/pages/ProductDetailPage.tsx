@@ -3,8 +3,22 @@ import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 import { useCartStore } from "../store/cartStore";
 
+interface Variant {
+  size: string;
+  color: string;
+}
+
+interface Product {
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  images: string[];
+  variants?: Variant[];
+}
+
 export const ProductDetailPage = () => {
-  const product = useLoaderData() as any;
+  const product = useLoaderData() as Product;
   const [size, setSize] = useState(product.variants?.[0]?.size ?? "M");
   const addItem = useCartStore((s) => s.addItem);
 

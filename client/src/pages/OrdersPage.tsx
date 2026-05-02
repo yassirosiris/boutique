@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
-import { http } from "../api/http";
+interface Order {
+  _id: string;
+  orderStatus: string;
+  total: number;
+}
 
 export const OrdersPage = () => {
-  const [orders, setOrders] = useState<any[]>([]);
+  const [orders, setOrders] = useState<Order[]>([]);
   useEffect(() => {
     http.get("/orders/mine").then((res) => setOrders(res.data));
   }, []);
