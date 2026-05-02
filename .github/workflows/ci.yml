@@ -10,36 +10,34 @@ jobs:
   frontend:
     name: Lint & Test Frontend
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./client
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: client/package-lock.json
-      - run: npm ci
+          cache-dependency-path: package-lock.json
+      - run: npm install
       - run: npm run lint
+        working-directory: ./client
       - run: npm test
+        working-directory: ./client
 
   backend:
     name: Lint & Test Backend
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./server
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: server/package-lock.json
-      - run: npm ci
+          cache-dependency-path: package-lock.json
+      - run: npm install
       - run: npm run lint
+        working-directory: ./server
       - run: npm test
+        working-directory: ./server
 
   build:
     name: Build Verification
@@ -49,13 +47,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm install
       - name: Build client
         working-directory: ./client
-        run: |
-          npm ci
-          npm run build
+        run: npm run build
       - name: Build server
         working-directory: ./server
-        run: |
-          npm ci
-          npm run build
+        run: npm run build
