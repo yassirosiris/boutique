@@ -11,7 +11,7 @@ interface Product {
 }
 
 export const CatalogPage = () => {
-  const [params, setParams] = useSearchParams();
+  const [params, setParams] = useSearchParams() as [URLSearchParams, typeof setParams];
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 

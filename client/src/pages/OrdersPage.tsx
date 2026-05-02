@@ -7,7 +7,7 @@ interface Order {
 export const OrdersPage = () => {
   const [orders, setOrders] = useState<Order[]>([]);
   useEffect(() => {
-    http.get("/orders/mine").then((res) => setOrders(res.data));
+    http.get<Order[]>("/orders/mine").then((res) => setOrders(res.data));
   }, []);
   if (!orders.length) return <p>Aucune commande pour le moment.</p>;
   return (

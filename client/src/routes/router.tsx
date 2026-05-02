@@ -11,6 +11,7 @@ import { ProductDetailPage } from "../pages/ProductDetailPage";
 import { RegisterPage } from "../pages/RegisterPage";
 import { ProtectedRoute } from "../components/ProtectedRoute";
 import { AdminRoute } from "../components/AdminRoute";
+import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
