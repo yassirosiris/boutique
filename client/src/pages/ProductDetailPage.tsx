@@ -30,7 +30,7 @@ export const ProductDetailPage = () => {
         <p className="mt-2 text-gray-600">{product.description}</p>
         <p className="mt-4 text-2xl font-semibold">{product.price} DT</p>
         <select className="mt-4 rounded border p-2" value={size} onChange={(e) => setSize(e.target.value)}>
-          {product.variants?.map((v: any) => (
+          {product.variants?.map((v: Variant) => (
             <option key={`${v.size}-${v.color}`} value={v.size}>{v.size} - {v.color}</option>
           ))}
         </select>

@@ -1,4 +1,3 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
 import { http } from "../api/http";
 import { MainLayout } from "../layouts/MainLayout";
 import { AdminDashboardPage } from "../pages/AdminDashboardPage";
