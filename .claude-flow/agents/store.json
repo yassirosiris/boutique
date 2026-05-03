@@ -1,0 +1,135 @@
+{
+  "agents": {
+    "agent-eslint-fix": {
+      "agentId": "agent-eslint-fix",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:34:39.145Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-typescript-types": {
+      "agentId": "agent-typescript-types",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:34:39.170Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-ui-redesign": {
+      "agentId": "agent-ui-redesign",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "opus"
+      },
+      "createdAt": "2026-05-03T13:34:39.180Z",
+      "model": "opus",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-cicd-fix": {
+      "agentId": "agent-cicd-fix",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:34:39.193Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-eslint-ts-client": {
+      "agentId": "agent-eslint-ts-client",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:42:24.479Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-cicd-workflow": {
+      "agentId": "agent-cicd-workflow",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:42:31.316Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-ui-ux-redesign": {
+      "agentId": "agent-ui-ux-redesign",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "opus"
+      },
+      "createdAt": "2026-05-03T13:42:43.838Z",
+      "model": "opus",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-fix-broken-tests": {
+      "agentId": "agent-fix-broken-tests",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:43:38.309Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-vercel-prod-ready": {
+      "agentId": "agent-vercel-prod-ready",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:43:44.211Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-server-typescript-fix": {
+      "agentId": "agent-server-typescript-fix",
+      "agentType": "general-purpose",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-03T13:43:56.505Z",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    }
+  },
+  "version": "3.0.0"
+}

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ruflo__agent_spawn",
+      "mcp__ruflo__hive-mind_init",
+      "mcp__ruflo__swarm_init",
+      "mcp__ruflo__swarm_status",
+      "mcp__ruflo__agent_list"
+    ]
+  }
+}
